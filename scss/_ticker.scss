@@ -1,0 +1,38 @@
+.ticker {
+  color: $white;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid $white;
+  border-bottom: 1px solid $white;
+}
+
+.ticker__wrapper {
+  display: flex;
+}
+
+.ticker__item {
+  @extend %Roboto-400;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 17px;
+  align-items: center;
+  padding: 26px 15px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  animation: ticker 5s linear infinite;
+}
+
+.ticker__icon {
+  margin-left: 30px;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateZ(0);
+  }
+
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}

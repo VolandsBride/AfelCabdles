@@ -173,11 +173,47 @@ select {
   vertical-align: middle;
 }
 
-.border-block, .header__btn {
+.hero__title, .border-block, .header__btn, .ticker__item {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
+.ticker {
+  color: #E1E1E1;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid #E1E1E1;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.ticker__wrapper {
+  display: flex;
+}
+
+.ticker__item {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 17px;
+  align-items: center;
+  padding: 26px 15px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  animation: ticker 5s linear infinite;
+}
+
+.ticker__icon {
+  margin-left: 30px;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateZ(0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
 *,
 *::after,
 *::before {
@@ -204,7 +240,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 22px;
+  padding: 22px 30px;
+  background-color: #E1E1E1;
 }
 .header__btn {
   display: inline-block;
@@ -221,7 +258,7 @@ body {
   opacity: 0.9;
 }
 .header__logo {
-  margin-left: 177px;
+  margin-left: 155px;
 }
 .header .nav__list {
   display: flex;
@@ -239,5 +276,56 @@ body {
 }
 
 .border-block {
-  border: 1px solid #222222;
+  border-right: 1px solid #222222;
+  border-left: 1px solid #222222;
+}
+
+.hero__block {
+  margin-top: -1px;
+  display: flex;
+  background-color: #222222;
+}
+.hero__left {
+  border-right: 1px solid #E1E1E1;
+  width: 50%;
+}
+.hero__right {
+  width: 50%;
+}
+.hero__cover {
+  display: flex;
+  justify-content: center;
+}
+.hero__logo {
+  width: 88%;
+  padding: 66px 0;
+}
+.hero__image {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #E1E1E1;
+  padding-bottom: 6px;
+}
+.hero__img {
+  width: 95%;
+  margin: 19px 0;
+}
+.hero__title {
+  color: #E1E1E1;
+  padding: 24px;
+  font-size: 58px;
+  line-height: 65px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #E1E1E1;
+}
+.hero__right-image {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #E1E1E1;
+}
+.hero__right-img {
+  width: 93.1%;
+  margin: 25px 0;
 }/*# sourceMappingURL=main.css.map */
