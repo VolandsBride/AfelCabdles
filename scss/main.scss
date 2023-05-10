@@ -12,21 +12,21 @@
 }
 
 html {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 body {
   color: $black;
+  background-color: $black;
   min-height: 100vh;
 }
 
 .container {
   max-width: 1390px;
   width: 100%;
-  padding: 0 20px;
   margin: 0 auto;
+  border: 1px solid $white;
 }
-
 
 .header {
   &__block {
@@ -75,9 +75,21 @@ body {
     border-right: 1px solid $black;
     border-left: 1px solid $black;
     @extend %Roboto-400;
-  }
+}
+
+.title {
+  @extend %Roboto-400;
+  color: $white;
+  padding: 24px;
+  font-size: 58px;
+  line-height: 65px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
 
 .hero {
+ 
   &__block {
     margin-top: -1px;
     display: flex;
@@ -96,37 +108,67 @@ body {
   }
   &__logo{
     width: 88%;
-    padding: 66px 0;
+    padding: 77px 0;
   }
   &__image {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid $white;
-    padding-bottom: 6px;
+    padding: 4.5px 0;
   }
   &__img {
     width: 95%;
     margin: 19px 0;
   }
   &__title {
-  @extend %Roboto-400;
-  color: $white;
-  padding: 24px;
-  font-size: 58px;
-  line-height: 65px;
-  text-align: center;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  border-bottom: 1px solid $white;
+    border-bottom: 1px solid $white;
   }
   &__right-image {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid $white;
+   
   }
   &__right-img {
-    width: 93.1%;
-    margin: 25px 0;
+    margin: 28px 0;
+    width: 95%;
+  }
+}
+
+.products {
+  &__title {
+    padding: 50px 0;
+    border-bottom: 1px solid $white;
+  }
+  &__content {
+    padding: 20px 22px;
+  }
+  &__list {
+    display: flex;
+    gap: 23px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &__item {
+    .card {
+      position: relative;
+      text-align: center;
+      &__text {
+        position: absolute;
+        top: 120px;
+        left: 0;
+        right: 0;
+      }
+      &__smell {
+        @extend %Roboto-400;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      &__title {
+        @extend %Roboto-400;
+        text-transform: uppercase;
+        font-size: 32px;
+      }
+    }
   }
 }
 

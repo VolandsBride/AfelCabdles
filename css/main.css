@@ -173,7 +173,7 @@ select {
   vertical-align: middle;
 }
 
-.hero__title, .border-block, .header__btn, .ticker__item {
+.products__item .card__title, .products__item .card__smell, .title, .border-block, .header__btn, .ticker__item {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
@@ -226,14 +226,15 @@ html {
 
 body {
   color: #222222;
+  background-color: #222222;
   min-height: 100vh;
 }
 
 .container {
   max-width: 1390px;
   width: 100%;
-  padding: 0 20px;
   margin: 0 auto;
+  border: 1px solid #E1E1E1;
 }
 
 .header__block {
@@ -280,6 +281,16 @@ body {
   border-left: 1px solid #222222;
 }
 
+.title {
+  color: #E1E1E1;
+  padding: 24px;
+  font-size: 58px;
+  line-height: 65px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
 .hero__block {
   margin-top: -1px;
   display: flex;
@@ -298,34 +309,58 @@ body {
 }
 .hero__logo {
   width: 88%;
-  padding: 66px 0;
+  padding: 77px 0;
 }
 .hero__image {
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid #E1E1E1;
-  padding-bottom: 6px;
+  padding: 4.5px 0;
 }
 .hero__img {
   width: 95%;
   margin: 19px 0;
 }
 .hero__title {
-  color: #E1E1E1;
-  padding: 24px;
-  font-size: 58px;
-  line-height: 65px;
-  text-align: center;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
   border-bottom: 1px solid #E1E1E1;
 }
 .hero__right-image {
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid #E1E1E1;
 }
 .hero__right-img {
-  width: 93.1%;
-  margin: 25px 0;
+  margin: 28px 0;
+  width: 95%;
+}
+
+.products__title {
+  padding: 50px 0;
+  border-bottom: 1px solid #E1E1E1;
+}
+.products__content {
+  padding: 20px 22px;
+}
+.products__list {
+  display: flex;
+  gap: 23px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.products__item .card {
+  position: relative;
+  text-align: center;
+}
+.products__item .card__text {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+}
+.products__item .card__smell {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.products__item .card__title {
+  text-transform: uppercase;
+  font-size: 32px;
 }/*# sourceMappingURL=main.css.map */
