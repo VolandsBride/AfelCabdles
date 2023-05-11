@@ -363,4 +363,35 @@ body {
 .products__item .card__title {
   text-transform: uppercase;
   font-size: 32px;
+}
+
+.slider__items {
+  padding: 20px;
+}
+.slider .slick-next::before {
+  display: none;
+}
+.slider .slick-prev::before {
+  display: none;
+}
+
+.story__items {
+  display: flex;
+}
+.story__left {
+  width: 50%;
+  border: 1px solid #E1E1E1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.story__left-title {
+  padding: 48px 0;
+}
+.story__left-img {
+  max-width: 100%;
+  width: 100%;
+}
+.story__right {
+  width: 50%;
 }/*# sourceMappingURL=main.css.map */
