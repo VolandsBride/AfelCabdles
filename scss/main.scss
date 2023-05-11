@@ -134,6 +134,7 @@ body {
 }
 
 .products {
+  margin-top: -1px;
   &__title {
     padding: 50px 0;
     border-bottom: 1px solid $white;
@@ -156,6 +157,7 @@ body {
         top: 120px;
         left: 0;
         right: 0;
+        color: $black;
       }
       &__smell {
         @extend %Roboto-400;
@@ -173,6 +175,7 @@ body {
 }
 
 .slider {
+      margin-top: -1px;
   &__items {
     padding: 20px;
   }
@@ -185,18 +188,19 @@ body {
 }
 
 .story {
+    margin-top: -1px;
   &__items {
     display: flex;
   }
   &__left {
     width: 50%;
-    border: 1px solid $white;
+    border-right: 1px solid $white;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   &__left-title {
-    padding: 48px 0;
+    padding: 49px 0;
   }
   &__left-img {
     max-width: 100%;
@@ -204,6 +208,38 @@ body {
   }
   &__right {
     width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  &__right-logo {
+    max-width: 100%;
+    width: 100%;
   }
 }
 
+.bottom {
+  margin-top: -2px;
+  &__img {
+    width: 100%;
+  }
+}
+
+.footer {
+  margin-top: -1px;
+  font-size: 15px;
+  text-transform: uppercase;
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 93px;
+  }
+  &__address {
+    @extend %Roboto-400;
+    color: $white;
+    font-style: normal;
+  }
+  &__social {
+    color: $white;
+  }
+}
